@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.buscaReceita">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF"
+        app:itemIconTint="#B13D0C"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B13D0C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:id="@+id/logo_cacareceita2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_cacareceita2" />
+
+    <EditText
+        android:id="@+id/inputNomeReceita"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/estilo_inputbuscareceita"
+        android:drawableEnd="@drawable/icon_pesquisa_buscareceita"
+        android:ems="10"
+        android:fontFamily="@font/josefin_sans"
+        android:hint="Digite o nome da receita"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#80B13D0C"
+        android:textColorHint="#80B13D0C" />
+
+    <View
+        android:id="@+id/caixa"
+        android:layout_width="350dp"
+        android:layout_height="298dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/estilo_viewbuscareceita" />
+
+    <EditText
+        android:id="@+id/inputIngredientes"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/estilo_inputbuscareceita"
+        android:drawableEnd="@drawable/icon_pesquisa_buscareceita"
+        android:ems="10"
+        android:fontFamily="@font/josefin_sans"
+        android:hint="Digite os ingredientes que você tem"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#80B13D0C"
+        android:textColorHint="#80B13D0C" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:text="Ingredientes selecionados" />
+
+
+</FrameLayout>

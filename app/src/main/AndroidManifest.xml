@@ -16,7 +16,7 @@
             android:name=".activity.Pagamento"
             android:exported="false" />
         <activity
-            android:name=".Anotacoes"
+            android:name=".activity.Anotacoes"
             android:exported="false" />
         <activity
             android:name=".activity.Anotacoes"
