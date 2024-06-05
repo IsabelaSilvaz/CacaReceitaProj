@@ -81,7 +81,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="240dp"
-        android:text="Ingredientes selecionados" />
+        android:fontFamily="@font/josefin_slab_semibold"
+        android:text="Ingredientes selecionados"
+        android:textColor="#B13D0C"
+        android:textSize="16dp" />
 
 
 </FrameLayout>

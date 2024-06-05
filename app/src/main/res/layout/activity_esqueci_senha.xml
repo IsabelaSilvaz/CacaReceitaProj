@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Senha1">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/sair"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="voltarTelaLogin"
+        android:contentDescription="voltar para tela inicial(login)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067"
+        app:layout_constraintVertical_bias="0.04"
         app:srcCompat="@drawable/setadesaida" />
 
     <ImageView
@@ -96,6 +97,8 @@
         android:hint="Digite seu e-mail..."
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#80B13D0C"
         android:textColorHint="#80B13D0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

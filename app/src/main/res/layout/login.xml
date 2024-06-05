@@ -91,10 +91,11 @@
     <TextView
         android:id="@+id/texto_esqueciSenha"
         android:layout_width="170dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="490dp"
         android:fontFamily="@font/josefin_sans"
+        android:onClick="esqueciSenha"
         android:text="Esqueci a senha"
         android:textAlignment="center"
         android:textColor="#B13D0C"

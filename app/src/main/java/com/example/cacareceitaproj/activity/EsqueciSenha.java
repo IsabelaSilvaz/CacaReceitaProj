@@ -1,6 +1,8 @@
 package com.example.cacareceitaproj.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.cacareceitaproj.LoginActivity;
 import com.example.cacareceitaproj.R;
 
 public class EsqueciSenha extends AppCompatActivity {
@@ -22,5 +25,10 @@ public class EsqueciSenha extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void voltarTelaLogin(View v) {
+        Intent i = new Intent(this, LoginActivity.class);
+        startActivity(i);
     }
 }

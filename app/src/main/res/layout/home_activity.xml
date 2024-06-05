@@ -51,4 +51,5 @@
         android:textAllCaps="true"
         android:textColor="#D39055"
         android:textSize="14sp" />
+
 </FrameLayout>

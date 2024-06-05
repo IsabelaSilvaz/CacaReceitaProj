@@ -1,14 +1,22 @@
 package com.example.cacareceitaproj.activity;
 
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.cacareceitaproj.LoginActivity;
 import com.example.cacareceitaproj.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -21,6 +29,43 @@ public class HomeActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                int id = menuItem.getItemId();
+
+                if (id == R.id.home) {
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                    return true;
+                }
+
+                if (id == R.id.pesquisa) {
+                    startActivity(new Intent(getApplicationContext(), buscaReceita.class));
+                    return true;
+                }
+
+                if (id == R.id.perfil) {
+                    startActivity(new Intent(getApplicationContext(), PerfilActivity.class));
+                    return true;
+                }
+
+                if (id == R.id.assinatura) {
+                    startActivity(new Intent(getApplicationContext(), AssinaturaActivity.class));
+                    return true;
+                }
+
+                if (id == R.id.livro) {
+                    startActivity(new Intent(getApplicationContext(), LivrosMenu.class));
+                    return true;
+                }
+
+                return false;
+            }
         });
     }
 }

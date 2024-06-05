@@ -13,15 +13,6 @@
         android:theme="@style/Theme.CacaReceitaProj"
         tools:targetApi="31">
         <activity
-            android:name=".activity.Pagamento"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Anotacoes"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Anotacoes"
-            android:exported="false" />
-        <activity
             android:name=".activity.NovaSenha"
             android:exported="false" />
         <activity
@@ -29,6 +20,18 @@
             android:exported="false" />
         <activity
             android:name=".activity.LivrosMenu"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Anotacoes"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AssinaturaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.buscaReceita"
             android:exported="false" />
         <activity
             android:name=".activity.EsqueciSenha"
