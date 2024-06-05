@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.433" />
 
     <Button
-        android:id="@+id/BotaoContinuar"
+        android:id="@+id/ContinuarVerificar"
         android:layout_width="158dp"
         android:layout_height="61dp"
         android:backgroundTint="#FF8716"
