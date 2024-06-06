@@ -8,7 +8,7 @@
     tools:context=".activity.ExcluirReceita">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/Chefinho2"
         android:layout_width="163dp"
         android:layout_height="172dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/chefinho" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/SetaSai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.442" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/botaoExcluir"
         android:layout_width="242dp"
         android:layout_height="49dp"
         android:backgroundTint="#B13D0C"
@@ -57,7 +57,7 @@
         app:layout_constraintVertical_bias="0.537" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/BotaoNExcluir"
         android:layout_width="245dp"
         android:layout_height="50dp"
         android:backgroundTint="#FF8716"

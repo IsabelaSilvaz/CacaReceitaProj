@@ -8,7 +8,7 @@
     tools:context=".activity.Anotacoes">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/Chefinho4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +93,7 @@
         app:layout_constraintVertical_bias="0.739" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/BotaoNSair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#994E0D"

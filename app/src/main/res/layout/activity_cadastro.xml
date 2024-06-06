@@ -153,7 +153,7 @@
         android:textSize="60sp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/SetaDeSaida"
         android:layout_width="98dp"
         android:layout_height="110dp"
         android:layout_marginTop="20dp"

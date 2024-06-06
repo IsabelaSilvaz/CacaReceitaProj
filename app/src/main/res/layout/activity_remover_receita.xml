@@ -8,7 +8,7 @@
     tools:context=".activity.RemoverReceita">
 
     <ImageView
-        android:id="@+id/chefinho"
+        android:id="@+id/Chefinho"
         android:layout_width="144dp"
         android:layout_height="166dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/chefinho" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/SetaDeSaida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.383" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/BotaoNaoSair"
         android:layout_width="238dp"
         android:layout_height="51dp"
         android:backgroundTint="#B13D0C"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/BotaoNSair"
         android:layout_width="245dp"
         android:layout_height="51dp"
         android:backgroundTint="#FF8716"

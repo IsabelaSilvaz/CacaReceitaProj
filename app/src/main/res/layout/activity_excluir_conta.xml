@@ -8,7 +8,7 @@
     tools:context=".activity.ExcluirConta">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/Chefinho4"
         android:layout_width="151dp"
         android:layout_height="155dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/chefinho" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/Sair2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/BotaoSair"
         android:layout_width="211dp"
         android:layout_height="48dp"
         android:backgroundTint="#B13D0C"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.598" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/BotaoNSair1"
         android:layout_width="205dp"
         android:layout_height="49dp"
         android:backgroundTint="#FF8716"
