@@ -9,7 +9,7 @@ import retrofit2.Retrofit;
 
 public class ApiManager {
 
-    private static final String API_KEY = "4b2af2f4827945878cf9ad05a0f99f6b";
+    private static final String API_KEY = "b102e2965c274e44a06894bc4360ae55";
 
     private SpoonacularApi service;
 

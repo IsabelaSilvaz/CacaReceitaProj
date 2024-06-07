@@ -148,15 +148,12 @@ public class buscaReceita extends AppCompatActivity {
                                     Card card = new Card(recipe.getTitle(), recipe.getImage());
                                     cardList.add(card);
 
-                                    // Usando uma variável final para a receita dentro do loop
-                                    final Recipe finalRecipe = recipe;
                                     adapter.setOnItemClickListener(new CardAdapter.OnItemClickListener() {
                                         @Override
                                         public void onItemClick(int position) {
                                             Intent intent = new Intent(buscaReceita.this, ReceitaActivity.class);
-                                            intent.putExtra("titulo_receita", finalRecipe.getTitle());
-                                            intent.putExtra("imagem_receita", finalRecipe.getImage());
-                                            intent.putExtra("receita_informacoes", finalRecipe.getInstructions());
+                                            intent.putExtra("titulo_receita", recipe.getTitle());
+                                            intent.putExtra("imagem_receita", recipe.getImage());
                                             startActivity(intent);
                                         }
                                     });
@@ -181,18 +178,6 @@ public class buscaReceita extends AppCompatActivity {
                 }
             }
         });
-
-
-
-
-//        cardList.add(new Card("Resultado 1", R.drawable.imagem_receita));
-//        cardList.add(new Card("Resultado 2", R.drawable.imagem_receita));
-//        cardList.add(new Card("Resultado 3", R.drawable.imagem_receita));
-//        cardList.add(new Card("Resultado 4", R.drawable.imagem_receita));
-//        cardList.add(new Card("Resultado 5", R.drawable.imagem_receita));
-//
-//        CardAdapter adapter = new CardAdapter(this, cardList);
-//        recyclerView.setAdapter(adapter);
     }
 
 }
