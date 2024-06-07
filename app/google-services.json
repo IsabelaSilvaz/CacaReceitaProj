@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229979221069",
+    "project_id": "cacareceita2",
+    "storage_bucket": "cacareceita2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229979221069:android:a74f6135d87033dddd0004",
+        "android_client_info": {
+          "package_name": "com.example.cacareceitaproj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa6ilM8l42675d5ubSG1qpT829sDQ293c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
