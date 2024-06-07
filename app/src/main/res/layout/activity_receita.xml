@@ -43,42 +43,124 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo_cacareceita2" />
 
-    </FrameLayout>
-
-    <ScrollView
-        android:id="@+id/scroll_telaReceita"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="65dp"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
+        <ScrollView
+            android:id="@+id/scroll_telaReceita"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="match_parent"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="80dp">
 
-            <ImageView
-                android:id="@+id/imageView12"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/setadesaida" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/jost_semibold"
-                android:text="Tortinha de Arroz"
-                android:textColor="#B13D0C"
-                android:textSize="22dp" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        </LinearLayout>
-    </ScrollView>
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="voltar para tela inicial(login)"
+                        android:onClick="voltarReceita"
+                        app:srcCompat="@drawable/setadesaida" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/jost_semibold"
+                        android:text="Tortinha de Arroz"
+                        android:textColor="#B13D0C"
+                        android:textSize="24sp" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/imagem_receita"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/imagem_receita2" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/jost_semibold"
+                        android:text="Descrição da receita"
+                        android:textColor="#B13D0C"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="100dp"
+                        app:srcCompat="@drawable/icon_perfil" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="35dp"
+                        android:layout_height="41dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="50dp"
+                        app:srcCompat="@drawable/icon_temporeceita" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="100dp"
+                        android:text="4"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="45dp"
+                        android:text="30min" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="246dp"
+                    android:layout_height="226dp"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/jost_italic"
+                    android:text="Meia xícara de arroz branco cozido 1 colher de sopa de queijo parmesão ralado 1 colher de chá de sal 1 ovo"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
