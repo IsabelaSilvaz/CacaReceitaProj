@@ -80,6 +80,7 @@ public class ReceitaActivity extends AppCompatActivity {
 
         tituloReceita.setText(titulo);
         Picasso.get().load(imagemUrl).into(imagemReceita);
+        receita.setText(instrucoesReceita);
 
 
     }
