@@ -53,7 +53,7 @@
     <View
         android:id="@+id/caixa"
         android:layout_width="350dp"
-        android:layout_height="298dp"
+        android:layout_height="190dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="170dp"
         android:background="@drawable/estilo_viewbuscareceita" />
@@ -85,6 +85,25 @@
         android:text="Ingredientes selecionados"
         android:textColor="#B13D0C"
         android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nome_ingrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/estilo_textviewingrediente"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="Arroz" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaReceitas_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="390dp" />
 
 
 </FrameLayout>

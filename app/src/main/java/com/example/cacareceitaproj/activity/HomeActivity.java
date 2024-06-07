@@ -4,7 +4,6 @@ package com.example.cacareceitaproj.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -12,11 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.example.cacareceitaproj.LoginActivity;
 import com.example.cacareceitaproj.R;
+import com.example.cacareceitaproj.classes.Card;
+import com.example.cacareceitaproj.classes.CardAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -67,5 +71,33 @@ public class HomeActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        List<Card> cardList = new ArrayList<>();
+        cardList.add(new Card("Title 1", R.drawable.imagem_receita));
+        cardList.add(new Card("Title 2", R.drawable.imagem_receita));
+        cardList.add(new Card("Title 3", R.drawable.imagem_receita));
+        cardList.add(new Card("Title 4", R.drawable.imagem_receita));
+        cardList.add(new Card("Title 5", R.drawable.imagem_receita));
+
+        CardAdapter adapter = new CardAdapter(this, cardList);
+        recyclerView.setAdapter(adapter);
+
+        // Segundo RecyclerView
+        RecyclerView recyclerView2 = findViewById(R.id.recycler_view2);
+        recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        List<Card> cardList2 = new ArrayList<>();
+        cardList2.add(new Card("Title 6", R.drawable.imagem_receita));
+        cardList2.add(new Card("Title 7", R.drawable.imagem_receita));
+        cardList2.add(new Card("Title 8", R.drawable.imagem_receita));
+        cardList2.add(new Card("Title 9", R.drawable.imagem_receita));
+        cardList2.add(new Card("Title 10", R.drawable.imagem_receita));
+
+        CardAdapter adapter2 = new CardAdapter(this, cardList2);
+        recyclerView2.setAdapter(adapter2);
+
     }
 }
