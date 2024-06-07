@@ -3,6 +3,7 @@ package com.example.cacareceitaproj.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -63,5 +64,9 @@ public class AssinaturaActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    public void assineJa(View v) {
+        Intent i = new Intent(this, FazerAssinatura.class);
+        startActivity(i);
     }
 }

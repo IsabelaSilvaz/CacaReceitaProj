@@ -3,6 +3,7 @@ package com.example.cacareceitaproj.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -64,4 +65,9 @@ public class AlterarSenha extends AppCompatActivity {
             }
         });
     }
+    public void voltarTela(View v) {
+        Intent i = new Intent(this, PerfilActivity.class);
+        startActivity(i);
+    }
+
 }

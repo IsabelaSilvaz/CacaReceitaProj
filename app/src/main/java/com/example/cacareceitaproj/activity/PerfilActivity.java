@@ -3,6 +3,7 @@ package com.example.cacareceitaproj.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -63,5 +64,20 @@ public class PerfilActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    public void alterarSenha(View v) {
+        Intent i = new Intent(this, AlterarSenha.class);
+        startActivity(i);
+    }
+
+    public void excluirConta(View v) {
+        Intent i = new Intent(this, ExcluirConta.class);
+        startActivity(i);
+    }
+
+    public void sairConta(View v) {
+        Intent i = new Intent(this, Sair.class);
+        startActivity(i);
     }
 }

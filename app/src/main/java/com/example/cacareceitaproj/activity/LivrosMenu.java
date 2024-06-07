@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -67,4 +68,14 @@ public class LivrosMenu extends AppCompatActivity {
 
 
     }
+    public void adicionarReceita(View v) {
+        Intent i = new Intent(this, AdicionarReceita.class);
+        startActivity(i);
+    }
+
+    public void rascunho(View v) {
+        Intent i = new Intent(this, RascunhoActivity.class);
+        startActivity(i);
+    }
+
 }

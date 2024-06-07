@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -65,4 +66,14 @@ public class Fazer_Assinatura_Anual extends AppCompatActivity {
             }
         });
     }
+    public void voltarTela(View v) {
+        Intent i = new Intent(this, AssinaturaActivity.class);
+        startActivity(i);
+    }
+
+    public void planoMensal(View v) {
+        Intent i = new Intent(this, FazerAssinatura.class);
+        startActivity(i);
+    }
+
 }
