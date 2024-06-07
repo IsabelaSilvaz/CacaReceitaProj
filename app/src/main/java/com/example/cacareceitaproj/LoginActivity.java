@@ -17,6 +17,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.cacareceitaproj.activity.CadastroActivity;
+import com.example.cacareceitaproj.activity.EsqueciSenha;
 import com.example.cacareceitaproj.activity.HomeActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -100,6 +101,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void cadastrar(View v) {
         Intent i = new Intent(this, CadastroActivity.class);
+        startActivity(i);
+    }
+
+    public void esqueciSenha(View v) {
+        Intent i = new Intent(this, EsqueciSenha.class);
         startActivity(i);
     }
 }
