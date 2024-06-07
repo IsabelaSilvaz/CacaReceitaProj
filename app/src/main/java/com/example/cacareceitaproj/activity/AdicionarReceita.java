@@ -1,6 +1,5 @@
 package com.example.cacareceitaproj.activity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -15,13 +14,13 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.cacareceitaproj.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Fazer_Assinatura_Anual extends AppCompatActivity {
+public class AdicionarReceita extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_fazer_assinatura_anual);
+        setContentView(R.layout.activity_adicionar_receita);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -29,7 +28,7 @@ public class Fazer_Assinatura_Anual extends AppCompatActivity {
         });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
-        bottomNavigationView.setSelectedItemId(R.id.assinatura);
+        bottomNavigationView.setSelectedItemId(R.id.livro);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

@@ -5,151 +5,140 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.Pix_Mensal">
+    tools:context=".activity.AlterarSenha">
 
-    <ImageView
-        android:id="@+id/molho"
-        android:layout_width="422dp"
-        android:layout_height="63dp"
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B13D0C"
+        android:text="Salvar alterações"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
-        app:srcCompat="@drawable/molho" />
+        app:layout_constraintVertical_bias="0.881" />
 
     <ImageView
-        android:id="@+id/saida"
+        android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        app:srcCompat="@drawable/setadesaida" />
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/chefinho3" />
 
     <TextView
-        android:id="@+id/Titulo"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/josefin_slab_bold"
-        android:text="Pagamento Pix "
-        android:textColor="#803211"
-        android:textSize="40dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Ana Luísa"
+        android:textColor="#B13D0C"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+
+    <TextView
+        android:id="@+id/digite_atual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefin_sans"
+        android:text="Digite a sua senha atual"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <TextView
+        android:id="@+id/digite_nova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefin_sans"
+        android:text="Digite a sua nova senha"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <EditText
+        android:id="@+id/senha_nova"
+        android:layout_width="300sp"
+        android:layout_height="48sp"
+        android:background="@drawable/background_inputlogin"
+        android:ems="10"
+        android:hint="Nova senha"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#B13D0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.695" />
 
-    <TextView
-        android:id="@+id/valor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jost"
-        android:text="Valor da compra: R$: 9,90"
-        android:textColor="#B3B13D0C"
-        android:textSize="16sp"
+    <EditText
+        android:id="@+id/confirmar_senha"
+        android:layout_width="300sp"
+        android:layout_height="48sp"
+        android:background="@drawable/background_inputlogin"
+        android:ems="10"
+        android:hint="Confirmar senha"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#B13D0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintVertical_bias="0.781" />
 
-    <ImageView
-        android:id="@+id/Qrcode"
-        android:layout_width="162dp"
-        android:layout_height="154dp"
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="300sp"
+        android:layout_height="48sp"
+        android:background="@drawable/background_inputlogin"
+        android:ems="10"
+        android:hint="Senha atual"
+        android:inputType="textPassword"
+        android:paddingLeft="10sp"
+        android:textColor="#B13D0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384"
-        app:srcCompat="@drawable/qrcode" />
-
-    <Button
-        android:id="@+id/BotaoCopiarPix"
-        android:layout_width="202dp"
-        android:layout_height="49dp"
-        android:backgroundTint="#B13D0C"
-        android:fontFamily="@font/jost"
-        android:gravity="start|center_vertical"
-        android:text="Copiar código Pix"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.535" />
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="28dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562"
-        app:srcCompat="@drawable/pix" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="329dp"
-        android:layout_height="126dp"
-        android:fontFamily="@font/jost"
-        android:gravity="center"
-        android:text="Pagar com Pix          é fácil e rápido! Abra seu aplicativo bancário e escaneie o QR Code para prosseguir com o pagamento ou Copie o código Pix através do botão acima, abra seu aplicativo bancário na opção PIX copia e cola, cole-o e prossiga com o pagamento."
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="25dp"
-        android:layout_height="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613"
-        app:srcCompat="@drawable/pix1" />
-
-    <ImageView
-        android:id="@+id/chefinho"
-        android:layout_width="134dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="284dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/fundo" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="121dp"
-        android:layout_height="161dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.979"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952"
-        app:srcCompat="@drawable/chefinho" />
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/setadesaida" />
 
     <FrameLayout
         android:id="@+id/idFramelayout"

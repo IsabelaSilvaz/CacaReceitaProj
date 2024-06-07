@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074"
+        app:layout_constraintVertical_bias="0.058"
         app:srcCompat="@drawable/molho" />
 
     <ImageView
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.194" />
 
     <View
-        android:id="@+id/OpcaoCredito"
+        android:id="@+id/caixaOpcaoCredito"
         android:layout_width="157dp"
         android:layout_height="57dp"
         android:background="@drawable/vazadocombordas"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.283" />
 
     <View
-        android:id="@+id/OpcaoDebito"
+        android:id="@+id/caixaOpcaoDebito"
         android:layout_width="162dp"
         android:layout_height="56dp"
         android:background="@drawable/vazadocombordas"
@@ -239,7 +239,7 @@
         app:layout_constraintVertical_bias="0.643" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/textoNumeroCartao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/josefin_sans"
@@ -327,6 +327,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
+
+    <FrameLayout
+        android:id="@+id/idFramelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF"
+            app:itemIconTint="#B13D0C"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B13D0C"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <ImageView
+            android:id="@+id/logo_cacareceita2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_cacareceita2" />
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

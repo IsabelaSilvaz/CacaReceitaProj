@@ -15,6 +15,18 @@
         android:theme="@style/Theme.CacaReceitaProj"
         tools:targetApi="31">
         <activity
+            android:name=".activity.MeuLivroReceita"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdicionarReceita"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RascunhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AlterarSenha"
+            android:exported="false" />
+        <activity
             android:name=".activity.Confirmar_Pagamento"
             android:exported="false" />
         <activity
