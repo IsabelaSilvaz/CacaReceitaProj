@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -15,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.cacareceitaproj.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.squareup.picasso.Picasso;
 
 
 public class ReceitaActivity extends AppCompatActivity {
@@ -66,6 +69,20 @@ public class ReceitaActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        String titulo = getIntent().getStringExtra("titulo_receita");
+        String imagemUrl = getIntent().getStringExtra("imagem_receita");
+        String instrucoesReceita = getIntent().getStringExtra("receita_informacoes");
+
+        TextView tituloReceita = findViewById(R.id.textView20);
+        ImageView imagemReceita = findViewById(R.id.imagem_receita);
+        TextView receita = findViewById(R.id.textView25);
+
+        tituloReceita.setText(titulo);
+        Picasso.get().load(imagemUrl).into(imagemReceita);
+        receita.setText(instrucoesReceita);
+
+
     }
 
     public void voltarReceita(View v) {

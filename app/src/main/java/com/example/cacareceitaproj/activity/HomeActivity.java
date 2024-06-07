@@ -4,6 +4,7 @@ package com.example.cacareceitaproj.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -34,7 +35,7 @@ import retrofit2.Response;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private static final String API_KEY = "6bdc6f038dd6410a8379bb1c79ec41da";
+    private static final String API_KEY = "4b2af2f4827945878cf9ad05a0f99f6b";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,11 +85,8 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        // Chamar o método para carregar os cards
         getSpoonacularRecipe();
-
-        // Segundo RecyclerView
-
-
     }
 
     private void getSpoonacularRecipe() {
@@ -104,15 +102,31 @@ public class HomeActivity extends AppCompatActivity {
         call1.enqueue(new Callback<RecipeResponse>() {
             @Override
             public void onResponse(Call<RecipeResponse> call, Response<RecipeResponse> response1) {
-                if(response1.isSuccessful()) {
+                if (response1.isSuccessful()) {
                     RecipeResponse recipeResponse = response1.body();
                     List<Recipe> recipes = recipeResponse.getRecipes();
 
-                    for (int i = 0; i < recipes.size(); i++){
+                    for (int i = 0; i < recipes.size(); i++) {
                         Recipe recipe = recipes.get(i);
-                        cardList.add(new Card(recipe.getTitle(), recipe.getImage()));
+                        Card card = new Card(recipe.getTitle(), recipe.getImage());
+                        cardList.add(card);
 
+                        // Usando uma variável final para a receita dentro do loop
+                        final Recipe finalRecipe = recipe;
 
+                        // Configurando o ouvinte de clique para cada item
+                        adapter.setOnItemClickListener(new CardAdapter.OnItemClickListener() {
+                            @Override
+                            public void onItemClick(int position) {
+                                // Ação a ser executada quando o card for clicado
+                                // Abra a ReceitaActivity com os dados da receita clicada
+                                Intent intent = new Intent(HomeActivity.this, ReceitaActivity.class);
+                                intent.putExtra("titulo_receita", finalRecipe.getTitle());
+                                intent.putExtra("imagem_receita", finalRecipe.getImage());
+                                intent.putExtra("receita_informacoes", finalRecipe.getInstructions());
+                                startActivity(intent);
+                            }
+                        });
                     }
 
                     adapter.notifyDataSetChanged(); // Notifica o adaptador sobre as alterações na lista
@@ -132,8 +146,8 @@ public class HomeActivity extends AppCompatActivity {
         RecyclerView recyclerView2 = findViewById(R.id.recycler_view2);
         recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         List<Card> cardList2 = new ArrayList<>();
-        CardAdapter adapter2 = new CardAdapter(this, cardList);
-        recyclerView2.setAdapter(adapter);
+        CardAdapter adapter2 = new CardAdapter(this, cardList2); // Corrigido para usar cardList2
+        recyclerView2.setAdapter(adapter2); // Corrigido para usar adapter2
 
         call2.enqueue(new Callback<RecipeResponse>() {
             @Override
@@ -144,7 +158,21 @@ public class HomeActivity extends AppCompatActivity {
 
                     for (int i = 0; i < recipes.size(); i++){
                         Recipe recipe = recipes.get(i);
-                        cardList2.add(new Card(recipe.getTitle(), recipe.getImage()));
+
+                        Card card = new Card(recipe.getTitle(), recipe.getImage());
+                        cardList2.add(card);
+
+                        final Recipe finalRecipe = recipe; // Copia final da variável recipe
+                        card.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(HomeActivity.this, ReceitaActivity.class);
+                                intent.putExtra("titulo_receita", finalRecipe.getTitle());
+                                intent.putExtra("imagem_receita", finalRecipe.getImage());
+                                intent.putExtra("receita_informacoes", finalRecipe.getInstructions());
+                                startActivity(intent);
+                            }
+                        });
                     }
 
                     adapter2.notifyDataSetChanged(); // Notifica o adaptador sobre as alterações na lista
@@ -157,7 +185,5 @@ public class HomeActivity extends AppCompatActivity {
                 t.printStackTrace();
             }
         });
-
-
     }
 }

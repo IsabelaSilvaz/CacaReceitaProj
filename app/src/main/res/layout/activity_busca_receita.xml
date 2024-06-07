@@ -33,29 +33,13 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/logo_cacareceita2" />
 
-    <EditText
-        android:id="@+id/inputNomeReceita"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/estilo_inputbuscareceita"
-        android:drawableEnd="@drawable/icon_pesquisa_buscareceita"
-        android:ems="10"
-        android:fontFamily="@font/josefin_sans"
-        android:hint="Digite o nome da receita"
-        android:inputType="text"
-        android:paddingLeft="10dp"
-        android:paddingEnd="10dp"
-        android:textColor="#80B13D0C"
-        android:textColorHint="#80B13D0C" />
 
     <View
         android:id="@+id/caixa"
-        android:layout_width="350dp"
-        android:layout_height="190dp"
+        android:layout_width="352dp"
+        android:layout_height="223dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/estilo_viewbuscareceita" />
 
     <EditText
@@ -63,7 +47,7 @@
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/estilo_inputbuscareceita"
         android:drawableEnd="@drawable/icon_pesquisa_buscareceita"
         android:ems="10"
@@ -75,15 +59,35 @@
         android:textColor="#80B13D0C"
         android:textColorHint="#80B13D0C" />
 
+    <Button
+        android:id="@+id/addIngrediente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:backgroundTint="#B13D0C"
+        android:layout_marginTop="151dp"
+        android:layout_marginLeft="250dp"
+        />
+
+    <Button
+        android:id="@+id/pesquisarReceita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar"
+        android:backgroundTint="#B13D0C"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="250dp"
+        />
+
     <TextView
         android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/estilo_linhahome"
         android:fontFamily="@font/josefin_slab_semibold"
         android:text="Ingredientes selecionados"
-        android:background="@drawable/estilo_linhahome"
         android:textColor="#B13D0C"
         android:textSize="16dp" />
 
@@ -92,13 +96,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="230dp"
         android:background="@drawable/estilo_textviewingrediente"
         android:paddingLeft="10dp"
         android:paddingTop="5dp"
         android:paddingEnd="10dp"
         android:paddingBottom="5dp"
-        android:text="Arroz" />
+        android:text="        " />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaReceitas_resultado"

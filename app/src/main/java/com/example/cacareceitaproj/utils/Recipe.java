@@ -1,9 +1,18 @@
 package com.example.cacareceitaproj.utils;
 
-public class Recipe{
+import com.google.gson.annotations.SerializedName;
+
+public class Recipe {
+    @SerializedName("title")
     private String title;
+
+    @SerializedName("image")
     private String image;
-    private String instrucions;
+
+    @SerializedName("instructions")
+    private String instructions;
+
+    // Getters e Setters
 
     public String getTitle() {
         return title;
@@ -21,11 +30,11 @@ public class Recipe{
         this.image = image;
     }
 
-    public String getInstrucions() {
-        return instrucions;
+    public String getInstructions() {
+        return instructions;
     }
 
-    public void setInstrucions(String instrucions) {
-        this.instrucions = instrucions;
+    public void setInstructions(String instructions) {
+        this.instructions = instructions;
     }
 }

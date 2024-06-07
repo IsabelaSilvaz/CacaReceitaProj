@@ -18,6 +18,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
 
     private Context context;
     private List<Card> cardList;
+    private OnItemClickListener listener;
+
     public CardAdapter(Context context, List<Card> cardList) {
         this.context = context;
         this.cardList = cardList;
@@ -35,12 +37,23 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         Card card = cardList.get(position);
         holder.cardTitle.setText(card.getTitulo());
         Picasso.get().load(card.getImagemCard()).into(holder.cardImage);
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onItemClick(position);
 
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return cardList.size();
+    }
+
+    public interface OnItemClickListener {
+
+        void onItemClick(int position);
+
     }
 
     public static class CardViewHolder extends RecyclerView.ViewHolder {
@@ -53,4 +66,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
             cardImage = itemView.findViewById(R.id.card_image);
         }
     }
+
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
 }
+
