@@ -3,6 +3,7 @@ package com.example.cacareceitaproj.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -10,9 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cacareceitaproj.R;
+import com.example.cacareceitaproj.classes.Card;
+import com.example.cacareceitaproj.classes.CardAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class buscaReceita extends AppCompatActivity {
 
@@ -63,5 +71,19 @@ public class buscaReceita extends AppCompatActivity {
                 return false;
             }
         });
+
+        RecyclerView recyclerView = findViewById(R.id.listaReceitas_resultado);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        List<Card> cardList = new ArrayList<>();
+        cardList.add(new Card("Resultado 1", R.drawable.imagem_receita));
+        cardList.add(new Card("Resultado 2", R.drawable.imagem_receita));
+        cardList.add(new Card("Resultado 3", R.drawable.imagem_receita));
+        cardList.add(new Card("Resultado 4", R.drawable.imagem_receita));
+        cardList.add(new Card("Resultado 5", R.drawable.imagem_receita));
+
+        CardAdapter adapter = new CardAdapter(this, cardList);
+        recyclerView.setAdapter(adapter);
     }
+
 }

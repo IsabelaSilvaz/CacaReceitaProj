@@ -13,16 +13,7 @@
         android:theme="@style/Theme.CacaReceitaProj"
         tools:targetApi="31">
         <activity
-            android:name=".activity.ExcluirConta"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Sair"
-            android:exported="false" />
-        <activity
-            android:name=".activity.ExcluirReceita"
-            android:exported="false" />
-        <activity
-            android:name=".activity.RemoverReceita"
+            android:name=".activity.ReceitaActivity"
             android:exported="false" />
         <activity
             android:name=".activity.NovaSenha"
