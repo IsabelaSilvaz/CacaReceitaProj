@@ -35,7 +35,7 @@ import retrofit2.Response;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private static final String API_KEY = "b102e2965c274e44a06894bc4360ae55";
+    private static final String API_KEY = "e70c537d574748f78b0915eaea141f99";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
