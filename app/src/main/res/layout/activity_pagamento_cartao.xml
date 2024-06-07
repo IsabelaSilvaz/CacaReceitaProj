@@ -8,7 +8,7 @@
     tools:context=".activity.PagamentoCartao">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/molho"
         android:layout_width="445dp"
         android:layout_height="86dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/molho" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/sair4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.285" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/OpcaoCredito"
         android:layout_width="115dp"
         android:layout_height="55dp"
         android:fontFamily="@font/josefin_sans"
@@ -87,7 +87,7 @@
         app:layout_constraintVertical_bias="0.285" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/OpcaoDebito"
         android:layout_width="130dp"
         android:layout_height="56dp"
         android:fontFamily="@font/josefin_sans"
@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.285" />
 
     <View
-        android:id="@+id/cartao"
+        android:id="@+id/Cartao"
         android:layout_width="322dp"
         android:layout_height="167dp"
         android:background="@drawable/cartao"
@@ -172,7 +172,7 @@
         app:layout_constraintVertical_bias="0.504" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
@@ -314,7 +314,7 @@
         app:layout_constraintVertical_bias="0.813" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Confirmar"
         android:layout_width="137dp"
         android:layout_height="48dp"
         android:backgroundTint="#B13D0C"
