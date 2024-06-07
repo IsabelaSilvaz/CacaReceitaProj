@@ -39,7 +39,7 @@
         android:src="@drawable/logo_cacareceita2" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/SetaSai"
         android:layout_width="match_parent"
         android:layout_height="162dp"
         android:layout_marginTop="45dp"

@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/setadesaida" />
 
     <ImageView
-        android:id="@+id/chefinho"
+        android:id="@+id/Chefinho"
         android:layout_width="147dp"
         android:layout_height="129dp"
         app:layout_constraintBottom_toBottomOf="parent"

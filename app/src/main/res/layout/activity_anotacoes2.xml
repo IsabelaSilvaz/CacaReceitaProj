@@ -8,7 +8,7 @@
     tools:context=".activity.Anotacoes">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/Chefinho4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,9 +29,10 @@
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.181" />
 
     <TextView
         android:id="@+id/textView9"
@@ -39,13 +40,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Receita de tortinha de arroz"
+        android:textColor="#AE5F5F"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintVertical_bias="0.271" />
 
     <TextView
         android:id="@+id/textView10"
@@ -93,7 +95,7 @@
         app:layout_constraintVertical_bias="0.739" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/BotaoNSair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#994E0D"
