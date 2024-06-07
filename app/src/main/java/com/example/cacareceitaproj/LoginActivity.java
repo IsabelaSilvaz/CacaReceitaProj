@@ -18,11 +18,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.cacareceitaproj.activity.CadastroActivity;
 import com.example.cacareceitaproj.activity.HomeActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import com.example.cacareceitaproj.activity.ReceitaActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -93,7 +96,6 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }
     }
-
 
 
     public void cadastrar(View v) {
